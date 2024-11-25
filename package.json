@@ -1,0 +1,14 @@
+{
+  "name": "fnbd_multa_tag",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0"
+  },
+  "devDependencies": {},
+  "main": "src/{index.js,functions/*.js}"
+}
