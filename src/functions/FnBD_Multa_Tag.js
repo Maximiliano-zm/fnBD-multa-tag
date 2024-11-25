@@ -1,6 +1,6 @@
 import { app } from "@azure/functions";
-// import fn365document from "./services/fn365document.js";
-// import EventStatus from "./events/eventStatus.js";
+import Controller from "./controller/controller.js";
+
 app.http("BD-multa-tag", {
   methods: ["POST"],
   authLevel: "anonymous",
