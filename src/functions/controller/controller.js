@@ -1,14 +1,14 @@
-import CreatedFN from "../services/Create.js";
 
-const Controller = async (req) => {
+// import EventStatus from "../event/event.js";
+import createdFN from "../services/FnCreated.js";
+
+const Controller = async (json) => {
+  // let typeEvent = json.typeEvent;
   try {
-    const clientBD = await DataBaseFn(dataDB);
-    // console.log(connectOpen)
-    switch (typeEvent) {
-      case "CREATE":
-        // const reqCreate = await CreatedFN(json);
-        break;
-    }
+   
+        const Create = await createdFN(json);
+        return Create;
+    
   } catch (error) {
     console.error(error);
   }

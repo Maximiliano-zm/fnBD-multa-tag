@@ -1,5 +1,3 @@
-import sql from "mssql";
-
 // const User = process.env.,
 // const Host = process.env.,
 // const Database = process.env.,
@@ -33,13 +31,4 @@ const dbConfig = {
   },
 };
 
-(async () => {
-  try {
-    const pool = await sql.connect(dbConfig);
-    console.log("Conexión exitosa a la base de datos.", pool);
-    pool.close(); // Cierra la conexión después de la prueba
-  } catch (err) {
-    console.error("Error de conexión:", err.message);
-    console.log(err);
-  }
-})();
+export default dbConfig;
